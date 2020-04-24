@@ -1,1 +1,1 @@
-![Alt text](/Jogo-Da-Velha//img1.pmg?raw=true "Optional Title")
+ <img src=”/Jogo-Da-Velha/img1.png”>
