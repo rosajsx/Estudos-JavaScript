@@ -1,0 +1,66 @@
+.game {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #57595a;
+  border-radius: 10px;
+display: grid;
+grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game > div {
+border: 6px solid #92999c;
+border-radius: 0px;
+font-family: Helvetica;
+font-weight: bold;
+font-size: 4em;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+.btn{
+  
+  border: 5px solid #2c3e50;
+  background-color: #34495e;
+  color: white;
+  margin-top: 43%;
+  padding: 10px 20px
+
+
+
+}
+
+
+h1{
+  position: absolute;
+  top: -1.5%;
+  left: 30%;
+  color: black;
+  justify-content: center;
+align-items: center;
+margin: 0 auto;
+
+}
+
+.jogador{
+  color: rgb(11, 11, 44);
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
