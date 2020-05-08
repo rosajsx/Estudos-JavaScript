@@ -1,0 +1,140 @@
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  float:left;
+  width:20%;
+  align-items: center;
+  
+  
+
+}
+
+
+ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  align-self: center;
+  color: black;
+}
+
+li{
+  clear: both;
+  margin-top: 20px;
+  width: 480px;
+  height: 150px;
+  background-color: rgb(109,95,147);
+  align-items: center;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 8px;
+ 
+
+}
+
+li:hover{
+  opacity: 0.8;
+}
+
+ img{
+  width: 80px;
+  float:left;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+  
+
+}
+
+ strong{
+  font-size: 20px;
+}
+
+ p{
+
+
+  margin: 5px 0;
+
+}
+
+
+
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+body{
+  font-family:Verdana;
+  color:#aaaaaa;  
+}
+
+#top {
+  background-color: rgb(109,95,147);
+  padding:15px;
+  text-align: center;
+  color: black;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  box-shadow: 0 4px 2px -2px gray; 
+
+}
+
+#campo_pesquisa{
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 80px;
+  width: 50%;
+  height: 30px;
+  border: 1px solid rgb(109,95,147);  
+
+  
+}
+#btn_pesquisa{
+  border: none;
+  background-color:blueviolet;
+  margin-left: -5px;
+  height: 28px;
+}
+#bottom-bar{
+  background-color:rgb(109,95,147);
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  color: black;
+  margin-left: -8px;
+  margin-right: -8px;
+  box-shadow: 0 0 5px #333;
+
+}
+
+
+
