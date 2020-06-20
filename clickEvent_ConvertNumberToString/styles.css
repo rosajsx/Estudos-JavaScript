@@ -1,0 +1,86 @@
+/*Soft Reset*/
+*{
+  padding:0;
+  margin: 0;
+  overflow: hidden;
+
+}
+
+body{
+  background-image: url("teste.gif");
+}
+
+body h1{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 40%;
+  font: 50px;
+  margin-top: 1%;
+
+}
+
+
+.container{
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  background-color: rgba(165, 42, 42, 0.8);
+  margin-top: 20vh;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.text_space{
+  align-self: center;
+  font-size: 50px;
+  margin-left: 200px;
+  transition:  opacity 1s linear;
+}
+
+button{
+
+  height: 100px;
+  width: 400px;
+  margin-left: 36%;
+  margin-top: 10px;
+  border: none;
+  background-color: rgba(165, 42, 42, 0.8);
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.creator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(165, 42, 42, 0.8);
+  height: 200px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+.creator span{
+  margin-top: 40px;
+
+}
+
+.creator a{
+  text-decoration: none;
+  color: white;
+}
+
+.creator a:hover{
+  color: black;
+}
+
