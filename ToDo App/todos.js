@@ -5,55 +5,55 @@ var btnElement = document.querySelector('#app button');
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
-function renderTodos(){
-  listElement.innerHTML = '';
-  for(todo of todos){
-    var todoElement = document.createElement('li');
-    var todoText = document.createTextNode(todo);
+function renderTodos() {
+    listElement.innerHTML = '';
+    for (todo of todos) {
+        var todoElement = document.createElement('li');
+        var todoText = document.createTextNode(todo);
 
-    var linkElement = document.createElement('a');
+        var linkElement = document.createElement('a');
 
-    linkElement.href = "#";
+        linkElement.href = "#";
 
-    var pos = todos.indexOf(todo);
+        var pos = todos.indexOf(todo);
 
-    linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
+        linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
 
-    var linkText = document.createTextNode('Excluir');
+        var linkText = document.createTextNode('Excluir');
 
-    linkElement.appendChild(linkText);
+        linkElement.appendChild(linkText);
 
-    todoElement.appendChild(todoText);
-    todoElement.appendChild(linkElement);
-    listElement.appendChild(todoElement);
-  }
+        todoElement.appendChild(todoText);
+        todoElement.appendChild(linkElement);
+        listElement.appendChild(todoElement);
+    }
 }
 
-  renderTodos();
+renderTodos();
 
 
-  function addTodo(){
+function addTodo() {
     var todoText = inputElement.value;
 
     todos.push(todoText);
     inputElement.value = '';
     renderTodos();
     saveToStorage();
-  }
+}
 
-  btnElement.onclick = addTodo;
+btnElement.onclick = addTodo;
 
-  function deleteTodo(pos){
+function deleteTodo(pos) {
     todos.splice(pos, 1);
     renderTodos();
     saveToStorage();
 
 
-  }
+}
 
 
-  function saveToStorage(){
+function saveToStorage() {
 
     localStorage.setItem('list_todos', JSON.stringify(todos));
 
-  }
+}
